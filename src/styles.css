@@ -1,0 +1,93 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  color: rgb(255, 0, 43);
+  background-color: rgb(255, 0, 43);
+}
+::-webkit-scrollbar-track {
+  background-color: indigo;
+}
+::-webkit-scrollbar {
+  width: 1.5vh;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 0, 43);
+}
+body {
+  background-image: url("https://ourimagehosting.com/images/2022/07/19/250581.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2rem;
+  cursor: crosshair;
+}
+li {
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 3px 3px hotpink;
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 600%;
+  text-align: center;
+  -webkit-animation: h1 1s ease-in-out infinite alternate;
+  -moz-animation: h1 1s ease-in-out infinite alternate;
+  animation: h1 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes h1 {
+  from {
+    text-shadow: 0 0 10px purple, 0 0 20px violet, 0 0 30px blueviolet,
+      0 0 40px purple, 0 0 50px hotpink, 0 0 60px blue;
+  }
+  to {
+    text-shadow: 0 0 20px purple, 0 0 30px violet, 0 0 40px purple,
+      0 0 50px blue, 0 0 60px blueviolet, 0 0 70px hotpink, 0 0 80px blue;
+  }
+}
+.container {
+  width: 50rem;
+  height: 30rem;
+  margin: 10rem 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.foto {
+  width: 50rem;
+  height: 30rem;
+  position: absolute;
+}
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 7px solid white;
+  border-style: double;
+  margin-top: 10%;
+}
+.info {
+  position: absolute;
+  bottom: -5rem;
+  width: 46rem;
+  height: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("https://ourimagehosting.com/images/2022/07/20/OIP71f5cfb5b8ff8a1e.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  border: solid hotpink;
+  border-style: double;
+}
